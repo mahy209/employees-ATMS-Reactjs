@@ -1,0 +1,6 @@
+DATABASEURL=mongodb+srv://admin:i0yfTzqo0nQ4o6hK@cluster0.vlfou.mongodb.net/users?retryWrites=true&w=majority
+
+password = i0yfTzqo0nQ4o6hK
+
+
+;
