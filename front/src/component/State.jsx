@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./State.css";
 import axios from "axios";
 import StateTable from "./StateTable.jsx";
 import StateForm from "./StateForm.jsx";

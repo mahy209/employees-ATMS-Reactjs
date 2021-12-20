@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Education.css";
 import axios from "axios";
 import EducationTable from "./EducationTable.jsx";
 import EducationForm from "./EducationForm.jsx";

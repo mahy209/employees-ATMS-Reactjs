@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Country.css";
 import axios from "axios";
 import CountryTable from "./CountryTable.jsx";
 import CountryForm from "./CountryForm.jsx";

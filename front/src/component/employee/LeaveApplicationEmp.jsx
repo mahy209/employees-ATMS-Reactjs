@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./LeaveApplicationEmp.css";
 import axios from "axios";
 import LeaveApplicationEmpTable from "./LeaveApplicationEmpTable.jsx";
 import LeaveApplicationEmpForm from "./LeaveApplicationEmpForm.jsx";

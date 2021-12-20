@@ -1,5 +1,6 @@
 body {
-  background-color: #2b447b;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
 }
 #root {
   height: auto;
@@ -7,7 +8,8 @@ body {
 
 #main-outer-div {
   position: relative;
-  background-color: #fff;
+  background-color: #fffdf9;
+  ;
   width: 80%;
   max-width: 400px;
   margin: auto;
@@ -42,7 +44,7 @@ body {
   margin: 10px 0 10px;
   padding: 15px;
   border: 1px;
-  background-color: #eef3ff;
+  background-color: #fff5db;
 }
 
 .login-form-input:focus {
@@ -50,11 +52,12 @@ body {
 }
 
 #outer-login-form-div {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .login-form-input[type="submit"] {
-  background-color: #395faf;
+  background-color: #d9aa88;
+  ;
   border-width: 0px;
   margin-top: 15px;
   padding: 0px;
@@ -72,7 +75,7 @@ body {
 .alert {
   font-size: 14px;
   text-align: center;
-  color: red;
+  color: rgb(233, 17, 17);
 }
 
 @media (max-width: 300px) {

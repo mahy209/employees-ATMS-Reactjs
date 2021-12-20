@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./AdminPortal.css";
 import axios from "axios";
 import AdminPortalTable from "./AdminPortalTable.jsx";
 import AdminPortalForm from "./AdminPortalForm.jsx";

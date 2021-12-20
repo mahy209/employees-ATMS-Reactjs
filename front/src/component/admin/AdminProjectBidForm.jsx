@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./AdminProjectBidForm.css";
 import axios from "axios";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { Form, Button, Col, Row } from "react-bootstrap";

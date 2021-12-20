@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Position.css";
 import axios from "axios";
 import PositionTable from "./PositionTable.jsx";
 import PositionForm from "./PositionForm.jsx";

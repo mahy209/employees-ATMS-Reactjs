@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./WorkExperience.css";
 import axios from "axios";
 import WorkExperienceTable from "./WorkExperienceTable.jsx";
 import WorkExperienceForm from "./WorkExperienceForm.jsx";

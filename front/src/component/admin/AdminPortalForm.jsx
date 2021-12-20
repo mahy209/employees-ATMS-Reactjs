@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./AdminPortalForm.css";
 import { Form, Button, Col, Row } from "react-bootstrap";
 // import Form from 'react-bootstrap/Form'
 

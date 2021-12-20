@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./City.css";
 import axios from "axios";
 import CityTable from "./CityTable.jsx";
 import CityForm from "./CityForm.jsx";

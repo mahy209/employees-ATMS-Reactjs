@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Employee.css";
 import axios from "axios";
 import EmployeeTable from "./EmployeeTable.jsx";
 import EmployeeForm from "./EmployeeForm.jsx";

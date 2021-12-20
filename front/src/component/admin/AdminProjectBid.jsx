@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./AdminProjectBid.css";
 import axios from "axios";
 import AdminProjectBidTable from "./AdminProjectBidTable.jsx";
 import AdminProjectBidForm from "./AdminProjectBidForm.jsx";

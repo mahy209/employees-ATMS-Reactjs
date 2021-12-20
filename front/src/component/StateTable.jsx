@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./StateTable.css";
 import axios from "axios";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

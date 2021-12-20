@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./LeaveApplicationHR.css";
 import axios from "axios";
 import LeaveApplicationHRTable from "./LeaveApplicationHRTable.jsx";
 // import LeaveApplicationHRForm from "./LeaveApplicationHRForm.jsx";

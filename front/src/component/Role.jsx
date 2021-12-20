@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Role.css";
 import axios from "axios";
 import RoleTable from "./RoleTable.jsx";
 import RoleForm from "./RoleForm.jsx";

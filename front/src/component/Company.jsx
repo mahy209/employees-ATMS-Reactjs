@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Company.css";
 import axios from "axios";
 import CompanyTable from "./CompanyTable.jsx";
 import CompanyForm from "./CompanyForm.jsx";
