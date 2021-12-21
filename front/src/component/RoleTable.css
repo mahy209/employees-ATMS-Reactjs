@@ -1,6 +1,6 @@
 #add-button {
   float: right;
-  background-color: #0069d9;
+  background-color: #AD886C;
   border: 0;
   margin: 10px;
   /* padding: 5px; */
@@ -71,17 +71,6 @@
 #loading-bar {
   /* margin-top: 100px; */
   width: 100%;
-}
-#table-outer-div-scroll{
-  /* overflow: auto; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* box-sizing: content-box;  */
-  /* padding-right: 17px;  */
-  /* background-color: red; */
-}
-#table-outer-div-scroll::-webkit-scrollbar{
-  /* width: 0; */
 }
 #inner-table-div{
   overflow-x: auto;

@@ -1,7 +1,6 @@
 #form-submit-button button{
-    background-color: #0069d9;
-    border-color: #0069d9;
-    /* float: left; */
+    background-color: #AD886C;
+    border-color: #AD886C;
     
 }
 #form-cancel-button{
@@ -11,7 +10,6 @@
     right: 0;
     bottom: 0;
     margin: 0px;
-    /* background-color: red; */
     
 }
 #form-cancel-button button{
@@ -31,7 +29,6 @@ box-shadow: 0;
     /* padding: 0px; */
 }
 #form{
-    /* background-color: blue; */
     position: relative;
     margin: 0;
     font-size: 15px;
