@@ -127,6 +127,7 @@ class AdminProjectBidTable extends Component {
         this.setState({ loading: false });
         this.rowDataT = [];
 
+        // eslint-disable-next-line array-callback-return
         this.projectBidObj.map(data => {
           let temp = {
             data,
@@ -150,7 +151,7 @@ class AdminProjectBidTable extends Component {
 
   onProjectBidDelete = e => {
     console.log(e);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       axios
         .delete(process.env.REACT_APP_API_URL + "/api/admin/project-bid/" + e, {
           headers: {

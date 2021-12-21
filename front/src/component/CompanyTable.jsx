@@ -165,6 +165,7 @@ class AdminCompanyTable extends Component {
 
         this.rowDataT = [];
 
+        // eslint-disable-next-line array-callback-return
         this.companyObj.map(data => {
           let temp = {
             data,
@@ -198,7 +199,7 @@ class AdminCompanyTable extends Component {
 
   onCompanyDelete = e => {
     console.log(e);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       axios
         .delete(process.env.REACT_APP_API_URL + "/api/company/" + e, {
           headers: {

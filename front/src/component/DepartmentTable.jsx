@@ -88,6 +88,7 @@ class DepartmentTable extends Component {
         this.setState({ loading: false });
         this.rowDataT = [];
 
+        // eslint-disable-next-line array-callback-return
         this.departmentObj.map(data => {
           let temp = {
             data,
@@ -108,7 +109,7 @@ class DepartmentTable extends Component {
 
   onDepartmentDelete = e => {
     console.log(e);
-    if (window.confirm("Are you sure to delete this record ? ") == true) {
+    if (window.confirm("Are you sure to delete this record ? ") === true) {
       axios
         .delete(process.env.REACT_APP_API_URL + "/api/department/" + e, {
           headers: {
@@ -121,7 +122,7 @@ class DepartmentTable extends Component {
         .catch(err => {
           console.log(err);
           console.log(err.response);
-          if (err.response.status == 403) {
+          if (err.response.status === 403) {
             window.alert(err.response.data);
           }
 

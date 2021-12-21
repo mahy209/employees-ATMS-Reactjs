@@ -83,6 +83,7 @@ class PersonalInfoTable extends Component {
         sortable: true,
         filter: true,
         type: ["dateColumn"],
+        // eslint-disable-next-line no-dupe-keys
         filter: "agDateColumnFilter"
       },
       {
@@ -172,7 +173,7 @@ class PersonalInfoTable extends Component {
 
   onPersonalInfoDelete = e => {
     console.log(e);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       axios
         .delete(process.env.REACT_APP_API_URL + "/api/personalInfo/" + e, {
           headers: {

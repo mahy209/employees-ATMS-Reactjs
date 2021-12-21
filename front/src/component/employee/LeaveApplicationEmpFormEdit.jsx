@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import { Form,Button } from "react-bootstrap";
 import { Form, Button, Col, Row } from "react-bootstrap";
-import axios from "axios";
 
 class LeaveApplicationEmpForm extends Component {
   state = {
@@ -62,9 +61,9 @@ class LeaveApplicationEmpForm extends Component {
     <option value="" disabled selected>
                     Select your option
                   </option>
-    <option value="Leave Time"  selected={this.props.editData["Leavetype"] == "Leave Time"}>Leave Time</option>
-    <option value="Sick Leave"  selected={this.props.editData["Leavetype"] == "Sick Leave"}>Sick Leave</option>
-    <option value="Privilege Leave"  selected={this.props.editData["Leavetype"] == "Privilege Leave"}>Privilege Leave</option>
+    <option value="Leave Time"  selected={this.props.editData["Leavetype"] === "Leave Time"}>Leave Time</option>
+    <option value="Sick Leave"  selected={this.props.editData["Leavetype"] === "Sick Leave"}>Sick Leave</option>
+    <option value="Privilege Leave"  selected={this.props.editData["Leavetype"] === "Privilege Leave"}>Privilege Leave</option>
           </Form.Control>
     </Col>
     </Form.Group>

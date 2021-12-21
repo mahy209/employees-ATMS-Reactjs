@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./DashboardEmployee.css";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { Switch } from "react-router";
-import { Redirect } from "react-router-dom";
 import NavBar from "../NavBar.jsx";
 import PersonalInfo from "./PersonalInfo.jsx";
 import Education from "./Education.jsx";
@@ -17,9 +16,7 @@ import {
   faUsers,
  faUser,
 faFileAlt,
-faUniversity,
-faBriefcase,
-faMale,
+faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -35,7 +32,7 @@ class DashboardHR extends Component {
     // var sidebarV = React.findDOMNode( this.refs.sidebar);
     // sidebarV.style.disply="none";
     
-    if(this.state.checked==true){ 
+    if(this.state.checked===true){ 
        // document.getElementById("sidebar").setAttribute("style", "display:none")
       document.getElementById("sidebar").setAttribute("class", "display-none");
     }

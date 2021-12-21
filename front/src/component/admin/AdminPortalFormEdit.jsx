@@ -53,7 +53,7 @@ class AdminPortalForm extends Component {
         
         onChange={this.onStatusChange}   
         required
-        checked={this.state.Status==1}
+        checked={this.state.Status===1}
         />
         <Form.Check
         inline
@@ -63,7 +63,7 @@ class AdminPortalForm extends Component {
           name="status" 
           onChange={this.onStatusChange}  
           required      
-          checked={this.state.Status==0}
+          checked={this.state.Status===0}
         />
       </Col>
     </Form.Group>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import { Form,Button } from "react-bootstrap";
 import { Form, Button, Col, Row } from "react-bootstrap";
-import axios from "axios";
 
 class WorkExperienceForm extends Component {
   state = {

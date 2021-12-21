@@ -83,6 +83,7 @@ class AdminEmployeeTable extends Component {
         sortable: true,
         filter: true,
         type: ["dateColumn"],
+        // eslint-disable-next-line no-dupe-keys
         filter: "agDateColumnFilter"
       },
       {
@@ -197,12 +198,13 @@ class AdminEmployeeTable extends Component {
         this.setState({ employeeData: response.data });
         this.setState({ loading: false });
         this.rowDataT = [];
+        // eslint-disable-next-line array-callback-return
         this.employeeObj.map(data => {
           let temp = {
             data,
             Email: data["Email"],
             Password: data["Password"],
-            Account: data["Account"] == 1 ? "Admin" : (data["Account"] == 2 ? "HR" : (data["Account"] == 3 ? "Employee" : "")),
+            Account: data["Account"] === 1 ? "Admin" : (data["Account"] === 2 ? "HR" : (data["Account"] === 3 ? "Employee" : "")),
             RoleName: data["role"][0]["RoleName"],
             FirstName: data["FirstName"],
             MiddleName: data["MiddleName"],
@@ -226,7 +228,7 @@ class AdminEmployeeTable extends Component {
 
   onEmployeeDelete = e => {
     console.log(e);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       window.alert("You are not allowed to perform this operation");
       // axios
       //   .delete(process.env.REACT_APP_API_URL + "/api/employee/" + e, {

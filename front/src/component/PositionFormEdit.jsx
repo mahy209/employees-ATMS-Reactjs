@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-// import { Form,Button } from "react-bootstrap";
 import { Form, Button, Col, Row } from "react-bootstrap";
 import axios from "axios";
 
@@ -69,7 +67,7 @@ class PositionForm extends Component {
                     <option
                       value={data["_id"]}
                       selected={
-                        this.props.editData["company"][0]["_id"] == data["_id"]
+                        this.props.editData["company"][0]["_id"] === data["_id"]
                       }
                     >
                       {data["CompanyName"]}

@@ -107,6 +107,7 @@ class WorkExperienceTable extends Component {
         this.setState({ loading: false });
         this.rowDataT = [];
         // let data=this.educationObj.education["0"];
+        // eslint-disable-next-line array-callback-return
         this.workExperienceObj.workExperience.map(data => {
           let temp = {
             data,
@@ -128,7 +129,7 @@ class WorkExperienceTable extends Component {
 
   onWorkExperienceDelete = (e1, e2) => {
     console.log(e1, e2);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       axios
         .delete(process.env.REACT_APP_API_URL + "/api/work-experience/" + e1 + "/" + e2, {
           headers: {

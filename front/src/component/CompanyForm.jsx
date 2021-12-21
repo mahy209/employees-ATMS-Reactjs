@@ -65,7 +65,7 @@ class CompanyForm extends Component {
     let currentCountry = e.target.value;
 
     let filteredState = this.state.stateData.filter(
-      data => data["country"][0]["_id"] == currentCountry
+      data => data["country"][0]["_id"] === currentCountry
     );
     this.setState({ filteredStateData: filteredState });
 
@@ -75,7 +75,7 @@ class CompanyForm extends Component {
     let currentState = e.target.value;
 
     let filteredCity = this.state.cityData.filter(
-      data => data["state"][0]["_id"] == currentState
+      data => data["state"][0]["_id"] === currentState
     );
     this.setState({ filteredCityData: filteredCity });
 

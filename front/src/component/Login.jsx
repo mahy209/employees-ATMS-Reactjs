@@ -65,8 +65,8 @@ class Login extends Component {
               <ScaleLoader
                 css={override}
                 sizeUnit={"px"}
-                size={150}
-                color={"#123abc"}
+                size={100}
+                color={"#4f9ecf"}
                 loading={this.props.loading}
               />
             </div>

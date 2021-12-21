@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
 import { RingLoader } from "react-spinners";
 import { css } from "@emotion/core";
-import { Form, Button, Col, Row } from "react-bootstrap";
 
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
@@ -122,6 +121,7 @@ class LeaveApplicationHRTable extends Component {
         this.setState({ loading: false });
         this.rowDataT = [];
 
+        // eslint-disable-next-line array-callback-return
         this.leaveApplicationHRObj.map(data => {
           let temp = {
             data,
@@ -149,7 +149,7 @@ class LeaveApplicationHRTable extends Component {
 
   onLeaveApplicationHRDelete = (e1, e2) => {
     console.log(e1, e2);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       axios
         .delete(
           process.env.REACT_APP_API_URL + "/api/leave-application-hr/" + e1 + "/" + e2, {
@@ -194,13 +194,13 @@ class LeaveApplicationHRTable extends Component {
   }
 
   status = s => {
-    if (s == 1) {
+    if (s === 1) {
       return "Pending";
     }
-    if (s == 2) {
+    if (s === 2) {
       return "Approved";
     }
-    if (s == 3) {
+    if (s === 3) {
       return "Rejected";
     }
   };

@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
 import { RingLoader } from "react-spinners";
 import { css } from "@emotion/core";
 import {Button} from "react-bootstrap";
 
-// var FontAwesome = require('react-fontawesome');
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-balham.css";
@@ -93,6 +91,7 @@ class StateTable extends Component {
         this.setState({ loading: false });
         this.rowDataT = [];
 
+        // eslint-disable-next-line array-callback-return
         this.stateObj.map(data => {
           let temp = {
             data,
@@ -113,7 +112,7 @@ class StateTable extends Component {
   onStateDelete = e => {
     console.log(e);
     // let body= "ID=" + e;
-    if (window.confirm("Are you sure to delete this record ? ") == true) {
+    if (window.confirm("Are you sure to delete this record ? ") === true) {
       axios
         .delete(process.env.REACT_APP_API_URL + "/api/state/" + e, {
           headers: {
@@ -126,7 +125,7 @@ class StateTable extends Component {
         .catch(err => {
           console.log(err);
           console.log(err.response);
-          if(err.response.status==403){
+          if(err.response.status===403){
             window.alert(err.response.data) ;}
         });
     }

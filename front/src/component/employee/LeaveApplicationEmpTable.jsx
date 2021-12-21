@@ -124,6 +124,7 @@ class LeaveApplicationEmpTable extends Component {
         this.setState({ loading: false });
         this.rowDataT = [];
         // let data=this.educationObj.education["0"];
+        // eslint-disable-next-line array-callback-return
         this.leaveApplicationEmpObj.leaveApplication.map(data => {
           let temp = {
             data,
@@ -147,7 +148,7 @@ class LeaveApplicationEmpTable extends Component {
 
   onLeaveApplicationEmpDelete = (e1, e2) => {
     console.log(e1, e2);
-    if (window.confirm("Are you sure to delete this record? ") == true) {
+    if (window.confirm("Are you sure to delete this record? ") === true) {
       axios
         .delete(
           process.env.REACT_APP_API_URL + "/api/leave-application-emp/" + e1 + "/" + e2, {
@@ -190,18 +191,18 @@ class LeaveApplicationEmpTable extends Component {
   }
 
   status = s => {
-    if (s == 1) {
+    if (s === 1) {
       return "Pending";
     }
-    if (s == 2) {
+    if (s === 2) {
       return "Approved";
     }
-    if (s == 3) {
+    if (s === 3) {
       return "Rejected";
     }
   };
   onEdit = data => {
-    if (data["Status"] == 1) {
+    if (data["Status"] === 1) {
       this.props.onEditLeaveApplicationEmp(data);
     } else {
       window.alert(

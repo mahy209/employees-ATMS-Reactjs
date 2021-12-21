@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import LeaveApplicationHRTable from "./LeaveApplicationHRTable.jsx";
-// import LeaveApplicationHRForm from "./LeaveApplicationHRForm.jsx";
 import LeaveApplicationHRFormEdit from "./LeaveApplicationHRFormEdit.jsx";
 class LeaveApplicationHR extends Component {
   state = {

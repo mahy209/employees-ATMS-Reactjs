@@ -24,7 +24,7 @@ class NavBar extends Component {
             <span id="toggle-switch"><Switch 
     checked={this.props.checked}
     onChange={this.props.handleChange}
-    onColor="#404e67"
+    onColor="#d9aa88"
     onHandleColor="#ffffff"
     handleDiameter={10}
     uncheckedIcon={false}
@@ -55,12 +55,12 @@ class NavBar extends Component {
         
           <Navbar.Collapse id="logout-navbar-nav">
             <Nav className="ml-auto">             
-              <a  onClick={this.props.onClick} className="navbar-right-content">
+              <a  onClick={this.props.onClick} href="/#" className="navbar-right-content">
                 {/* Admin */}
             {this.props.loginInfo["Name"]}
 
                 </a>
-              <a onClick={this.props.onLogout} style={{"cursor":"pointer"}}className="navbar-right-content">Log Out</a>
+              <a onClick={this.props.onLogout} href="/#" style={{"cursor":"pointer"}}className="navbar-right-content">Log Out</a>
             </Nav>
           </Navbar.Collapse>
         {/* </div> */}

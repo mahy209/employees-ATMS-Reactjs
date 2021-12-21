@@ -165,19 +165,19 @@ class EmployeeFormEdit extends Component {
                 <Form.Control as="select" required>
                   <option
                     value="1"
-                    selected={this.props.editData["Account"] == 1}
+                    selected={this.props.editData["Account"] === 1}
                   >
                     Admin
                   </option>
                   <option
                     value="2"
-                    selected={this.props.editData["Account"] == 2}
+                    selected={this.props.editData["Account"] === 2}
                   >
                     HR
                   </option>
                   <option
                     value="3"
-                    selected={this.props.editData["Account"] == 3}
+                    selected={this.props.editData["Account"] === 3}
                   >
                     Employee
                   </option>
@@ -199,7 +199,7 @@ class EmployeeFormEdit extends Component {
                       key={index}
                       value={data["_id"]}
                       selected={
-                        this.props.editData["role"][0]["_id"] == data["_id"]
+                        this.props.editData["role"][0]["_id"] === data["_id"]
                       }
                     >
                       {data["RoleName"]}
@@ -220,7 +220,7 @@ class EmployeeFormEdit extends Component {
                   value="male"
                   name="gender"
                   onChange={this.onGenderChange}
-                  checked={this.state.GenderData == "male"}
+                  checked={this.state.GenderData === "male"}
                   required
                 />
                 <Form.Check
@@ -230,7 +230,7 @@ class EmployeeFormEdit extends Component {
                   value="female"
                   name="gender"
                   onChange={this.onGenderChange}
-                  checked={this.state.GenderData == "female"}
+                  checked={this.state.GenderData === "female"}
                   required
                 />
               </Col>
@@ -334,7 +334,7 @@ class EmployeeFormEdit extends Component {
                       key={index}
                       value={data["_id"]}
                       selected={
-                        this.props.editData["department"][0]["_id"] ==
+                        this.props.editData["department"][0]["_id"] ===
                         data["_id"]
                       }
                     >
@@ -359,7 +359,7 @@ class EmployeeFormEdit extends Component {
                       key={index}
                       value={data["_id"]}
                       selected={
-                        this.props.editData["position"][0]["_id"] == data["_id"]
+                        this.props.editData["position"][0]["_id"] === data["_id"]
                       }
                     >
                       {data["PositionName"]}
