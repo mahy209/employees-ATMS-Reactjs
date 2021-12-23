@@ -62,8 +62,8 @@ class LeaveApplicationEmpForm extends Component {
                     Select your option
                   </option>
     <option value="Leave Time"  selected={this.props.editData["Leavetype"] === "Leave Time"}>Leave Time</option>
-    <option value="Sick Leave"  selected={this.props.editData["Leavetype"] === "Sick Leave"}>Sick Leave</option>
-    <option value="Privilege Leave"  selected={this.props.editData["Leavetype"] === "Privilege Leave"}>Privilege Leave</option>
+    <option value="Sick"  selected={this.props.editData["Leavetype"] === "Sick"}>Sick Leave</option>
+    <option value="Privilege"  selected={this.props.editData["Leavetype"] === "Privilege"}>Privilege Leave</option>
           </Form.Control>
     </Col>
     </Form.Group>

@@ -54,29 +54,29 @@ class LeaveApplicationHRForm extends Component {
                     Select your option
                   </option>
                   <option
-                    value="Sick Leave"
-                    selected={this.props.editData["Leavetype"] === "Sick Leave"}
+                    value="Sick"
+                    selected={this.props.editData["Leavetype"] === "Sick"}
                     disabled
                   > 
-                    Sick Leave
+                    Sick 
                   </option>
                   <option
                     value="Leave Time"
                     selected={
                       this.props.editData["Leavetype"] === "Leave Time"
-                    }
+                  }
                     disabled
                   >
                     Leave Time
                   </option>
                   <option
-                    value="Privilege Leave"
+                    value="Privilege"
                     selected={
-                      this.props.editData["Leavetype"] === "Privilege Leave"
+                      this.props.editData["Leavetype"] === "Privilege"
                     }
                     disabled
                   >
-                    Privilege Leave
+                    Privilege 
                   </option>
                 </Form.Control>
               </Col>

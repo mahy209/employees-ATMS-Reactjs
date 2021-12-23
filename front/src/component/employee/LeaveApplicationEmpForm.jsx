@@ -24,12 +24,12 @@ class LeaveApplicationEmpForm extends Component {
     <Col sm={10} className="form-input">
     <Form.Control as="select"  required>
     <option value="" disabled selected>
-                    Select your option
-                  </option>
+       Select your option
+    </option>
     <option value="Leave Time">Leave Time </option>
-    <option value="Sick ">Sick </option>
-    <option value="Privilege ">Privilege</option>
-          </Form.Control>
+    <option value="Sick">Sick </option>
+    <option value="Privilege">Privilege</option>
+    </Form.Control>
     </Col>
     </Form.Group>
   <Form.Group as={Row}>
