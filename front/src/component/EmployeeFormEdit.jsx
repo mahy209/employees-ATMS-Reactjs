@@ -165,19 +165,19 @@ class EmployeeFormEdit extends Component {
                 <Form.Control as="select" required>
                   <option
                     value="1"
-                    selected={this.props.editData["Account"] === 1}
+                    value={this.props.editData["Account"] === 1}
                   >
                     Admin
                   </option>
                   <option
                     value="2"
-                    selected={this.props.editData["Account"] === 2}
+                    value={this.props.editData["Account"] === 2}
                   >
                     HR
                   </option>
                   <option
                     value="3"
-                    selected={this.props.editData["Account"] === 3}
+                    value={this.props.editData["Account"] === 3}
                   >
                     Employee
                   </option>
@@ -191,14 +191,14 @@ class EmployeeFormEdit extends Component {
               </Form.Label>
               <Col sm={10} className="form-input">
                 <Form.Control as="select" name="role">
-                  <option disabled selected>
+                  <option disabled value>
                     Select your option
                   </option>
                   {this.state.roleData.map((data, index) => (
                     <option
                       key={index}
                       value={data["_id"]}
-                      selected={
+                      value={
                         this.props.editData["role"][0]["_id"] === data["_id"]
                       }
                     >
@@ -326,14 +326,14 @@ class EmployeeFormEdit extends Component {
               </Form.Label>
               <Col sm={10} className="form-input">
                 <Form.Control as="select" name="department" required>
-                  <option value="" disabled selected>
+                  <option value="" disabled value>
                     Select your option
                   </option>
                   {this.state.departmentData.map((data, index) => (
                     <option
                       key={index}
                       value={data["_id"]}
-                      selected={
+                      value={
                         this.props.editData["department"][0]["_id"] ===
                         data["_id"]
                       }
@@ -351,14 +351,14 @@ class EmployeeFormEdit extends Component {
               </Form.Label>
               <Col sm={10} className="form-input">
                 <Form.Control as="select" name="position" required>
-                  <option value="" disabled selected>
+                  <option value="" disabled value>
                     Select your option
                   </option>
                   {this.state.positionData.map((data, index) => (
                     <option
                       key={index}
                       value={data["_id"]}
-                      selected={
+                      value={
                         this.props.editData["position"][0]["_id"] === data["_id"]
                       }
                     >

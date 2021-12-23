@@ -233,54 +233,54 @@ class PersonalInfoFormEdit extends Component {
 
               <Col sm={10} className="form-input">
                 <Form.Control as="select" required>
-                  <option value="" disabled selected>
+                  <option value="" disabled value>
                     Select your option
                   </option>
                   <option
                     value="A+"
-                    selected={this.props.editData["BloodGroup"] === "A+"}
+                    value={this.props.editData["BloodGroup"] === "A+"}
                   >
                     A+
                   </option>
                   <option
                     value="A-"
-                    selected={this.props.editData["BloodGroup"] === "A-"}
+                    value={this.props.editData["BloodGroup"] === "A-"}
                   >
                     A-
                   </option>
                   <option
                     value="B+"
-                    selected={this.props.editData["BloodGroup"] === "B+"}
+                    value={this.props.editData["BloodGroup"] === "B+"}
                   >
                     B+
                   </option>
                   <option
                     value="B-"
-                    selected={this.props.editData["BloodGroup"] === "B-"}
+                    value={this.props.editData["BloodGroup"] === "B-"}
                   >
                     B-
                   </option>
                   <option
                     value="AB+"
-                    selected={this.props.editData["BloodGroup"] === "AB+"}
+                    value={this.props.editData["BloodGroup"] === "AB+"}
                   >
                     AB+
                   </option>
                   <option
                     value="AB-"
-                    selected={this.props.editData["BloodGroup"] === "AB-"}
+                    value={this.props.editData["BloodGroup"] === "AB-"}
                   >
                     AB-
                   </option>
                   <option
                     value="O+"
-                    selected={this.props.editData["BloodGroup"] === "O+"}
+                    value={this.props.editData["BloodGroup"] === "O+"}
                   >
                     O+
                   </option>
                   <option
                     value="O-"
-                    selected={this.props.editData["BloodGroup"] === "O-"}
+                    value={this.props.editData["BloodGroup"] === "O-"}
                   >
                     O-
                   </option>
