@@ -47,14 +47,11 @@ class App extends Component {
       Admin:
           id:admin@gmail.com
           pass:admin
-      Hr:
-          id:hr@gmail.com
-          pass:hr
       Employee:
           id:emp@gmail.com
           pass:emp
       `)
-      }, 500);
+      }, 400);
 
       this.setState({ firstTimeAlert: false });
     }
