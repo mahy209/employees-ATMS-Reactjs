@@ -58,7 +58,7 @@ class RoleForm extends Component {
                   {this.companyData.map((data, index) => (
                     <option
                       value={data["_id"]}
-                      selected={
+                      value={
                         this.props.editData["company"][0]["_id"] === data["_id"]
                       }
                     >

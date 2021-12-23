@@ -53,7 +53,7 @@ class StateForm extends Component {
                   {this.countryData.map((data, index) => (
                     <option
                       value={data["_id"]}
-                      selected={
+                      value={
                         this.props.editData["country"][0]["_id"] === data["_id"]
                       }
                     >

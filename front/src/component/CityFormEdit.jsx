@@ -102,7 +102,7 @@ class CityForm extends Component {
                   {this.state.filteredStateData.map((data, index) => (
                     <option
                       value={data["_id"]}
-                      selected={
+                      vlaue={
                         this.props.editData["state"][0]["_id"] === data["_id"]
                       }
                     >

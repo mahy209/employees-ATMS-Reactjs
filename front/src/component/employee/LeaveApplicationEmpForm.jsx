@@ -11,7 +11,7 @@ class LeaveApplicationEmpForm extends Component {
     return (
       <div>
         
-        <h2 id="role-form-title">Add AttendaceApplicationEmp Details</h2>
+        <h2 id="role-form-title">Add LeaveApplicationEmp Details</h2>
  <div id="role-form-outer-div"><Form id="form" onSubmit={this.props.onLeaveApplicationEmpSubmit}>
   
 
