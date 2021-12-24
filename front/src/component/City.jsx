@@ -3,8 +3,6 @@ import axios from "axios";
 import CityTable from "./CityTable.jsx";
 import CityForm from "./CityForm.jsx";
 import CityFormEdit from "./CityFormEdit.jsx";
-
-
 class City extends Component {
   state = {
     table: true,
